@@ -9,13 +9,25 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@cartridge/controller": "^0.7.12",
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "assert": "^2.1.0",
+    "buffer": "^6.0.3",
     "expo": "~52.0.46",
     "expo-status-bar": "~2.0.1",
+    "process": "^0.11.10",
     "react": "18.3.1",
-    "react-native": "0.76.9"
+    "react-native": "0.76.9",
+    "react-native-crypto": "^2.2.0",
+    "react-native-get-random-values": "~1.11.0",
+    "react-native-randombytes": "^3.6.1",
+    "starknet": "^6.24.1",
+    "stream-browserify": "^3.0.0",
+    "expo-linking": "~7.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@types/node": "^22.14.1",
     "@types/react": "~18.3.12",
     "typescript": "^5.3.3"
   },
