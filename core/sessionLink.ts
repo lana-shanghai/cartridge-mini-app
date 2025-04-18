@@ -1,5 +1,4 @@
 import * as Linking from 'expo-linking';
-import { SESSION_POLICIES } from './session';
 
 const CONTROLLER_URL = 'https://x.cartridge.gg/login'; // ??
 

@@ -1,6 +1,6 @@
 import SessionProvider from '@cartridge/controller';
 import { constants } from 'starknet';
-import { SESSION_POLICIES, RPC_URL } from './session';
+import { SESSION_POLICIES } from './session';
 
 
 const provider = new SessionProvider({
