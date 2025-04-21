@@ -1,9 +1,19 @@
-<script>
-    const params = new URLSearchParams(window.location.search);
-    const token = params.get('token');
-    const address = params.get('address');
-    if (token && address) {
-      window.location.href = `exp://192.168.1.151:8081/--/?token=${token}&address=${address}`;
-    }
-  </script>
-  
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Returning to App...</title>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const encoded = params.get('startapp');
+
+      if (encoded) {
+        window.location.href = `exp://192.168.1.151:8081/--/?startapp=${encoded}`;
+      } else {
+        document.body.innerText = 'Missing session payload.';
+      }
+    </script>
+  </head>
+  <body>
+    <p>Returning to app...</p>
+  </body>
+</html>
