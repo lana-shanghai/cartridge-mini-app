@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cartridge Redirect</title>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const token = params.get('token');
+      const address = params.get('address');
+
+      if (window.ReactNativeWebView && token && address) {
+        window.ReactNativeWebView.postMessage(JSON.stringify({ token, address }));
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Session approved</h3>
+    <p>Returning to app...</p>
+  </body>
+</html>
